@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   formLogin:FormGroup;
-  public isLogueo:boolean=null;
+  public credencialesValidas:boolean=null;
  
   constructor(private fb:FormBuilder) { }
 
@@ -40,20 +40,13 @@ export class LoginComponent implements OnInit {
    let user = this.formLogin.get('user').value;
    let pass = this.formLogin.get('pass').value;
 
-   if(user=='admin' && pass=='admin'){
-    console.log('ENTRO BIEN');
-    this.isLogueo=true;
-    return this.isLogueo;
-   }else{
-    console.log('NO ENTRO');
-    this.isLogueo = false;
-    console.log('valgo',this.isLogueo);
-    
-    return this.isLogueo;
+   return this.credencialesValidas = (user == 'admin' && pass == 'admin') ? false : true;
+   
+  
    }
 
   }
 
 
 
-}
+

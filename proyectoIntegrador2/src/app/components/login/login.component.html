@@ -12,7 +12,7 @@
       <p>
       <button (click)="enviar()"  class="enviar" type="submit" id="login" value="Login">login</button>
       </p>
-      <small *ngIf="isLogueo" class="text-danger">Ingrese un Pass valido </small>
+      <small *ngIf="credencialesValidas" class="text-danger">Ingrese un Pass valido </small>
     </form>
     <div id="create-account-wrap">
       <p>Not a member? <a href="#">Create Account</a><p>

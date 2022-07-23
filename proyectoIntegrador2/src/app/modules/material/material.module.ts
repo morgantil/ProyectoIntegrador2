@@ -7,6 +7,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -18,9 +20,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   exports:[
     MatButtonModule,
     MatFormFieldModule,
-    MatTableModule,clc
+    MatTableModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule,
+    MatGridListModule
   ]
 })
 export class MaterialModule { }

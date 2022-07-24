@@ -1,4 +1,4 @@
-<div *ngIf="credencialesValidas" id="login-form-wrap">
+<div *ngIf="mostrarLogin" id="login-form-wrap">
     <h2>Login</h2>
     <form id="login-form" [formGroup]="formLogin">
       <p>
@@ -19,6 +19,6 @@
       </div>
   </div>
 
-  <div  *ngIf="!credencialesValidas">
+  <div  *ngIf="!mostrarLogin">
     <h1>SISTEMA DE GESTINO DE ALUMNOS-PROFESORES-CURSOS</h1>
   </div>

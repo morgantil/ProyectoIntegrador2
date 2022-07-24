@@ -41,8 +41,11 @@ export class LoginComponent implements OnInit {
    let user = this.formLogin.get('user').value;
    let pass = this.formLogin.get('pass').value;
 
-   return this.credencialesValidas = (user == 'admin' && pass == 'admin') ? false : true;
-   this.mostrarLogin=this.credencialesValidas;
+   this.credencialesValidas = (user == 'admin' && pass == 'admin') ? false : true;
+   this.mostrarLogin = this.credencialesValidas;
+   console.log('el valor de mostrarCredenciales es',this.mostrarLogin);
+   
+   return this.credencialesValidas;
   
    }
 

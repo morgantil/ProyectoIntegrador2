@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
   formLogin:FormGroup;
   public credencialesValidas:boolean=null;
+  public mostrarLogin=true;
  
   constructor(private fb:FormBuilder) { }
 
@@ -41,7 +42,7 @@ export class LoginComponent implements OnInit {
    let pass = this.formLogin.get('pass').value;
 
    return this.credencialesValidas = (user == 'admin' && pass == 'admin') ? false : true;
-   
+   this.mostrarLogin=this.credencialesValidas;
   
    }
 

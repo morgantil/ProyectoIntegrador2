@@ -6,11 +6,12 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfesoresComponent } from './components/profesores/profesores.component';
 
 const routes: Routes = [
+  {path:'',component:LoginComponent},
   {path:'alumnos',component:AlumnosComponent},
   {path:'profesores',component:ProfesoresComponent},
   {path:'cursos',component:CursosComponent},
-  {path:'',component:LoginComponent,pathMatch:'full'},
-  {path:'**',redirectTo:'/',pathMatch:'full'},
+  //{path:'',component:LoginComponent,pathMatch:'full'},
+  //{path:'**',redirectTo:'/',pathMatch:'full'},
 
 ];
 

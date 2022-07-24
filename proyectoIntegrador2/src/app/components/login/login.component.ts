@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  formLogin:FormGroup;
+  public formLogin:FormGroup;
   public credencialesValidas:boolean=null;
   public mostrarLogin=true;
  
